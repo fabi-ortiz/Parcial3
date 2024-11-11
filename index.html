@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 3</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="imagenes/logocopy.png" alt="" width="250">
+
+        </header>
+        <nav>
+            <a href="#FH">Formularios HTML</a>
+            <a href="#FC">Formularios CSS</a>
+            <a href="#T">Tablas</a>
+            <a href="#Es">Especificidad</a>
+            <a href="#CCSS">Colores CSS</a>
+            <a href="#A&B">Pseudo-elementos, After y Before</a>
+            <a href="#H">Header</a>
+            <a href="#F">Footer</a>
+        </nav>
+        <section>
+            <div class="titulo">
+                <h1 id="FH">Formularios en HTML</h1>
+            </div>
+            <div class="izquierda">
+                <h2>IDEAS PRINCIPALES</h2>
+                <div class=" textoi">
+                    <ol>Formularios de contacto <br>
+                        Nos sirve para hacer las zonas de contacto <br>
+                        Web dinámica – lado del servidor <br>
+                        Web estática -que hace del lado del cliente
+                    </ol>
+                    <ol>Elemento form: <br>
+                        Define un formulario que se utiliza para recompilar información que el usuario escribe.
+                    </ol>
+                    <ol>From action: <br>
+                        Se pone el folder y el archivo php <br>
+                        Método- post
+                    </ol>
+                    <ol>Elemento input: <br>
+                        Es el mas importante en un formulario puede ser mostrado de diferentes formas dependiendo el
+                        atributo type
+                    </ol>
+                    <ol>Elemento label: <br>
+                        Pone automáticamente EL FOR, se utiliza para ampliar el área de selección y poner un nombre
+                    </ol>
+                    <ol>Agrupar campos con fieldset: <br>
+                        Se usa para agrupar datos relacionados en un formulario y el elemento legend define el titulo
+                        para el elemento fieldset
+                    </ol>
+                    <ol>Option: <br>
+                        Es para que te de una lista de opciones </ol>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Notas de clase </h2>
+                <div class="textod">
+                    <ul>
+                        <li>Input type="text"- campos de texto de una sola linea</li>
+                        <li>Input type submit- recoge la información y procesa el archivo php</li>
+                        <li>Cols- es para los caracteres que podemos escribir </li>
+                        <li>Rows – es para definir los renglones en los que se pueden escribir </li>
+                        <li>Input type date- para poner la fecha y aparece un micro calendario</li>
+                        <li>Input type radio – sirve para seleccionar una de varias opciones </li>
+                        <li>Input type checkbox- sirve para seleccionar varias opciones </li>
+                        <li>Input type button- se usa para eventos o funciones con java script</li>
+                        <li>Input type reset- sirve para limpiar los campos del formularios</li>
+                        <li>Input type color- sirve para crear un botón donde se pueda seleccionar el color </li>
+                        <li>Input type range- sirve para seleccionar un rango, se le puede colocar un mínimo y un máximo
+                            con números enteros</li>
+                        <li>Input type search- sirve para crear el botón de buscar </li>
+                        <li>Input type number- sirve para crear un botón donde puedas seleccionar o poner un numero
+                        </li>
+                        <li>Input type tel- sirve para agregar un numero de teléfono, pero se tiene que agregar un
+                            pattern([0-9]{3} [0-9]{7} ) y para que sa obligatorio se pone required </li>
+                    </ul>
+
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/formhtml.png" alt="" width="350">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>RESUMEN</h2>
+            <div class="resumen">
+                <p>Estos botones se realizan sin la necesidad de crear un archivo de css, tienen la misma funcionalidad
+                    que los que se pueden crear con css, solo que se ven menos esteticos. Estos se crean con los campos
+                    input
+                    y de estos tiene diferentes tipos, como los que estan en la seccion de notas de clase
+                </p>
+            </div>
+        </footer>
+    </main>
+    <main>
+        <section>
+            <div class="titulo">
+                <h1 id="FC">Formularios en CSS</h1>
+            </div>
+            <div class="izquierda">
+                <h2>IDEAS PRINCIPALES</h2>
+                <div class=" textoi">
+                    <p>La base se crea con el html, haciendo una tabla. Utilizando los elementos de la tablas que ya
+                        conocemos.
+                    </p>
+                    <p>Con el archivo css, lo acomodaremos y lo haremos mas esteticos para poder hacer que se vea como
+                        la imagen. </p>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Notas de clase </h2>
+                <div class="textod">
+                    <p>
+                        Al unir los diferentes input podemos editarlos de la misma manera, para poder ponerles un hover
+                        y transicion <br>
+                        input[type="text"],input[type="email"]{ <br>
+                        border-radius: 0; <br>
+                        border: 2px solid transparent; <br>
+                        padding: 3px; <br>
+                        } <br> <br>
+                        input[type="text"],input[type="email"]:focus{ <br>
+                        outline: 0; <br>
+                        border-radius: 0; <br>
+                        /*border: 2px solid plum;*/ <br>
+                        box-shadow: 1px 1px 2px rgba(137, 43, 226, 0.65);<br>
+                        } <br><br>
+                        input[type="submit"]{ <br>
+                        border-radius: 0;<br>
+                        border: 0;<br>
+                        background-color: palevioletred; <br>
+                        color: black; <br>
+                        } <br><br>
+                        input[type="submit"]:hover{ <br>
+                        background-color: rgba(114, 49, 71, 0.751); <br>
+                        } <br>
+                        Con esto podemos hacer que el cuando el cursor seleccione algo este cambie de color
+                    </p>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/formulariocss.png" alt="" width="500">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>RESUMEN</h2>
+            <div class="resumen">
+                <p> Con este tipo de formularios podemos hacer que el usuario interactue con el sitio, dejando que haga
+                    una suscripcion o solo dejar un comentario
+                </p>
+            </div>
+        </footer>
+    </main>
+    <main>
+        <section>
+            <div class="titulo">
+                <h1 id="T">Tablas</h1>
+            </div>
+            <div class="izquierda">
+                <h2>IDEAS PRINCIPALES</h2>
+                <div class=" textoi">
+                    <p>Las tablas en html, consta de celdas de tabla dentro de filas y columnas <br><br>
+                        Antes de la creacion de css los elementos html table eran frecuentemente utilizados para el
+                        posicionamiento de una pagina.
+                    </p>
+                    <p>
+                        Rowspan- idica el numero de filas que ocupara la celda. Por defecto ocupa una sola fila /td
+                        rowspan=3>, la celdaocupara el alto de 3 celdas normales
+                    </p>
+                    <p>
+                        Colspan- indica el numero de columnas que ocupara la celda. Por defecto ocupa una solo columna.
+                        /td colspan=3>, quiere decir que la celda actual se extiende en el ncho de dos celdas
+
+
+                    </p>
+
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Notas de clase </h2>
+                <div class="textod">
+                    <ul> Elementos de una tabla
+                        <li>/table>- define a una tabla </li>
+                        <li>/thead>- encabezado de la tabla </li>
+                        <li>/th>- celda del encabezado de la tabla </li>
+                        <li>/tbody>- cuerpo de la tabla </li>
+                        <li>/tr>-renglon de la tabla </li>
+                        <li>/td>- celda de datos </li>
+                        <li>/caption>-usando para insertar captions</li>
+                        <li>/tfoot>- footer de la tabla </li>
+                    </ul>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/tabla.png" alt="" width="550">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>RESUMEN</h2>
+            <div class="resumen">
+                <p> Con este elemenoto podemos crear tablas a partir de un HTML y acomodarlo esteticamente con un CSS.
+                    podemos convinar dos celdas o mas si el resultado es el mismo o la informacion es la misma, como se
+                    muestra
+                    en la imagen.
+            </div>
+        </footer>
+    </main>
+    <main>
+        <section>
+            <div class="titulo">
+                <h1 id="Es">Especificidad</h1>
+            </div>
+            <div class="izquierda">
+                <h2>IDEAS PRINCIPALES</h2>
+                <div class=" textoi">
+                    <p>Es el medio por lo cual los navegadores deciden que valores de propiedad CSS son los mas
+                        relevantes para un elelemneto y por lo tanto se aplicaran.
+                    </p>
+                    <p>Solo se aplica cuando el mismo elemento es el objetivo de varias declaraciones, según las reglas
+                        de CSS, los elementos dirigidos directamente siempre tendran prioridad sobre las reglas que un
+                        elemento hereda de su antepasado</p>
+                    <p>Cuando varias declaraciones tienen la misma especificiad, la ultima declaracion encontrada en css
+                        se aplica al elemento. </p>
+                    <p>Igualdad especificidad : si la misma regla se escribe dos veces en la hoja de estilo externa,
+                        estonces la reglainferior a la hoj DE ESTILO esta mas cerca del elemento que va a disenar u, por
+                        lo tanto, se aplicara:siempre la ultima regla.</p>
+                    <p>Selector universal: el selector universal y los valores tienen una especificidad de 0. *, el
+                        cuerpo * y similares tienen una especificidad cero. Los valores heredados tambien tienen una
+                        especificidad de 0 </p>
+                    <p>La excepcion !importan <br>
+                        Cuando se usa esta regla !important en una declaracion de estilo, esta declaracion anula
+                        cualquier otra declaracion <br>
+                        Sin embargo !important es una mala practica y debe evitarse porque dificulta la depuracional
+                        romper la cascada natural en sus hojas de estilo
+                    </p>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Notas de clase </h2>
+                <div class="textod">
+                    <ol> JERARQUIA: <br>
+                        Hay cuatro categorias que definenn el nivel de especificidad de un selector
+                        <li>Estilos en linea:un estilo en linea se djunta directamenete al elemento que se va a diseñar
+                        </li>
+                        <li>ID es un identificador unico para los elelemtnos de la pagina,como #navbar</li>
+                        <li>Clases, atributos y pseudoclases: en esta categoria incluye clases,[atributos] y
+                            pseudoclases como hover, focus, etc</li>
+                        <li>Elementos y pseudo elementos esta categoria incluye nombres de elementos y pseudoelementos,
+                            como h1,div,:before y :after
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/especificidad.png" alt="" width="500">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>RESUMEN</h2>
+            <div class="resumen">
+                <p> Con esto podemos decidir que val0res son mas relevantes y que puedan ser aplicados en css
+                </p>
+            </div>
+        </footer>
+    </main>
+    <main>
+        <section>
+            <div class="titulo">
+                <h1 id="CCSS">Colores en CSS </h1>
+            </div>
+            <div class="izquierda">
+                <h2>IDEAS PRINCIPALES</h2>
+                <div class=" textoi">
+                    <p>sRGB- Standard Red, green, blue
+                        sintasis extractive, el color no existe sin la luz
+                    </p>
+                    <p>Tienen 256 valores del rojo, verde y azul, que son 16,777,216 colores <br>
+                        Existen mas de 4 formas de representar colores <br>
+                        • Keywords <br>
+                        • Hexadecimal <br>
+                        • RGB <br>
+                        • HSL <br>
+                        • HWB <br>
+                    </p>
+                    <p>
+                        Color y pagina web : <br>
+                        Seleccionar una paleta de colores correcta es importante para poder emitir bien el mensaje, ya
+                        que los colores tiene una psicologia <br><br>
+                        Pautas a tener en cuenta <br> <br>
+                        • Identifica el publico objetivo del proyecto <br>
+                        • Transimir sensaciones, ya que los colores estimulan nuestro cerebro, pero debemos tener <br>
+                        cuidado por que mucha de estas asociaciones tienen un fundamento cultural <br>
+                        • La armonía de colores y el equilbrio <br>
+                        • Colores de la misma gama cromática <br>
+                        • Colores complementarios <br>
+                        • Colores opuestos (adobe color) <br>
+                        • No abusar de los colores <br>
+                        • Combina colores claros y colores obscuros para lograr un buen contraste <br>
+
+                    </p>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Notas de clase </h2>
+                <div class="textod">
+                    <ul>
+                        <li>Keywords: <br>
+                            palabras clave, son los nombres de los colores
+                        </li>
+                        <li>Hexadecimales: <br>
+                            Trabaja de 16 caracteres (123456789ABCDEF) y se convinan para formar algun color. El cero
+                            representa que no hay color, se pone en negro y el F se pone en su maxima intensidad.
+                            Se debe poner siempre # para que sean 7 caracteres ejm- #00FF00, dos rojos, dos verdes y dos
+                            azules
+                        </li>
+                        <li>RGB y RGBA: <br>
+                            Red (0-255), green(0-255), blue(0-255), alfa (0-1), todos en su maxima intensidad da el
+                            color blanco y todos en su minima intensidad se pone en negro
+                        </li>
+                        <li>HSL Y HSLA: <br>
+                            Hue, Saturation, Lightness <br>
+                            Hue (0* - 356*)
+                            Saturation (0% - 100%)
+                            Lightness(0% - 100%)
+                        </li>
+                        <li>HWB: <br>Hue, White, Black </li>
+                    </ul>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/colorescss.jpg" alt="" width="450">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>RESUMEN</h2>
+            <div class="resumen">
+                <p> Los colores los utilizamos para poder mejorar esteticamente una pagina web, pero es muy importante
+                    saber escoger una buena paleta de colores, ya que al tener unos solores muy intensos puede cansar al
+                    usuario, asi que debemos dejar colores claros y calidos.
+                    Para poder sacar una paleta de colores se puede sacar desde una aplicacion o del mismo circulo
+                    cromatico, ya sea con colores complementarios o con la misma gama de colores </p>
+            </div>
+        </footer>
+    </main>
+    <main>
+        <section>
+            <div class="titulo">
+                <h1 id="A&B">Pseudo-elementos, After y Before</h1>
+            </div>
+            <div class="izquierda">
+                <h2>IDEAS PRINCIPALES</h2>
+                <div class=" textoi">
+                    <p>
+                        Pseudoelementos ::after :: before: <br><br>
+                        Permiten insertar contenido en una pagina desde CSS sin que tenga que estar en el html
+                        El resultado no esta en el documento , pero aparece en la pagina como si lo estuviera
+                    </p>
+                    <p>AFTER
+                        El selector: <br>
+                        after inserta algo despues del contenido de cada uno de los elementos seleccionados
+                    </p>
+                    <p>BEFORE: <br>
+                        Inserta algo antes del contenido seleccionado
+                    </p>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Notas de clase </h2>
+                <div class="textod">
+                    <ul>Se debe usar la propiedad conten
+                        <li>Una cadena de caracteres: <br><br>
+                            conten:”texto”. Deben estar especialmente codificados como una entidad Unicode</li>
+                        <li>Una imagen : <br><br>
+                            conten: url(image.jpg):- la imagen se inserta en sus dimensiones exactas y no se puede
+                            cambiar el tamaño </li>
+                        <li>Nada: content: <br><br>
+                            ””;- útil para insertar formar y lograr crear figuras .</li>
+                    </ul>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/before$after.jpg" alt="" width="300">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>RESUMEN</h2>
+            <div class="resumen">
+                <p> Con estos pseudo-elementos, podemos hacer que el cursor selecione ya sea antes o despues la
+                    informacion, tambien con ellas podemos crear diferentes figuras
+                    como las que se muestran en la image, ya sea estaticas o con animacion
+                </p>
+            </div>
+        </footer>
+    </main>
+    <main>
+        <section>
+            <div class="titulo">
+                <h1 id="H">Header</h1>
+            </div>
+            <div class="izquierda">
+                <h2>IDEAS PRINCIPALES</h2>
+                <div class=" textoi">
+                    <p>
+                        Debe ser ordenada y limpia para que pueda ser visualizada con un solo vistazo y no de lugar a
+                        confusion. <br><br>
+                        Es un espacio generico que tendra el mismo diseno en todas las paginas web, primero hacer una
+                        lista para ver los elementos que tendra
+                    </p>
+                    <p>Elementos que pueden ir: logotipo, menu, buscador, datos de ccontacto, redes sosciales, carritos
+                        de compra, etc. </p>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Notas de clase </h2>
+                <div class="textod">
+                    <ul>
+                        <li>Logotipo, solo en la Esquina superior izquierda o en medio </li>
+                        <li> Menu o nav: siempre en función del proyecto y de su estructura, se pude colocar un solo
+                            menú o dos.</li>
+                        <li> Buscador: buscadores internos en la pagina </li>
+                        <li>Datos de contacto: lo que podemos incluir es el teléfono y el email .</li>
+                        <li>Redes sociales: se pueden incluir en el header se puede poner solo los iconos pero solo 2
+                        </li>
+                        <li>Tienda en línea: se refleja en la web por el carrito de compra, el pedido, lista de deseos y
+                            los botones de comprar </li>
+                        <li>Botones desatacados: para enfatizar un servicio </li>
+                        <li>Barras fijas: puede mostrar anuncios, descuentos, cupones </li>
+                        <li>Selector de idioma: si el sitio web es milti lenguaje un elemento obligatorio en el header
+                            es un selector de idioma </li>
+                        <li>Formulario de suscripción : no es recomendable ya que ocupa demasiado espacio</li>
+                    </ul>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/header.png" alt="" width="550">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>RESUMEN</h2>
+            <div class="resumen">
+                <p> El header siempre se debe de ver ordenado y limpio, para no confundir al usuario. Tampoco debe estar
+                    saturado de informacion ni con colores muy intensos
+                    debe llevar un menu para que el usuario se pueda desplazar libremente en el sitio web, debe de tener
+                    una altura adecuada para que no tape parte
+                    del cuerpo del sitio.
+                </p>
+            </div>
+        </footer>
+    </main>
+    <main>
+        <section>
+            <div class="titulo">
+                <h1 id="F">Footer</h1>
+            </div>
+            <div class="izquierda">
+                <h2>IDEAS PRINCIPALES</h2>
+                <div class=" textoi">
+                    <p>
+                        Es un espacio generico que suele tener el mismo diseño en todas las paginas de un sitio web.
+                    </p>
+                    <p>Planificar cada uno de los elementos que se van a inculir en el footer es parte del proceso de
+                        diseño de un Proyecto web </p>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Notas de clase </h2>
+                <div class="textod">
+                    <ul>
+                        <li>Textos legales: <br>
+                            Son elementos obligatorios en el footer de toda web y no hay lugar para interpretaciones
+                        </li>
+                        <li>Cookies: <br>
+                            Es también uno de los textos legales obligatorios</li>
+                        <li>Redes sociales: <br>
+                            Permiten una vía de contacto directa entre la marca y las visitas en la
+                            web, se pueden añadir los botones de cada plataforma o utilizar. Widgets para mostrar las
+                            ultimas publicaciones </li>
+                        <li> Copyright: <br> Los créditos del diseñad y los autores del material grafico como fotos,
+                            ilustraciones o videos, instituciones que colaboran con el proyecto, si es el caso. </li>
+                        <li>Datos de contacto: <br>
+                            Son una información muy útil para que las vistas se pongan en contacto con la empresa o
+                            negocio. </li>
+                        <li>ellos de confianza: <br>
+                            Es un distintivo que otorga la asociación de internet MX a sitios web
+                            que pertenecen a empresas, organizaciones, instituciones y personas identificadas y
+                            comprometidas con la generación de confianza en línea.</li>
+                        <li>
+                            CTA(call to action): <br>
+                            Es una imagen o texto que invita a los visitantes a realizar una acción.
+                        </li>
+                        <li>Sitemap o mapa del sitio: <br>
+                            Son archivos en los que se proporciona información sobre las
+                            paginas, los videos y otros archivos del sitio, los sitemaps informan que archivos de un
+                            sitio son importantes para el autor e incluyen datos importantes sobre ellos </li>
+                        <li> Formularios de suscripción o newsletter: <br>
+                            Es un formulario ubicado en cualquier pagina de
+                            un sitio web o blog donde los usuarios pueden completar los campos con sus datos para
+                            recibir correos electrónicos sobre temas relacionados con su interés</li>
+
+                    </ul>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/footer.png" alt="" width="500">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>RESUMEN</h2>
+            <div class="resumen">
+                <p>
+                    En el footer, podemos agregar toda la informacion que no podemos poner en el header. Hay que poner
+                    mucha antencion
+                    respecto a los textos legales, ya que sus multas son muy caras y tambien colo los sellos de
+                    sefuridad, hay que verificar que sean verdaderos.
+                </p>
+            </div>
+        </footer>
+    </main>
+    <div class="inicio-btn">
+        <a href="#top">Ir al inicio</a>
+    </div>
+</body>
+
+</html>

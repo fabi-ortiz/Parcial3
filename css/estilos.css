@@ -1,0 +1,147 @@
+*{
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+}
+html {
+    scroll-behavior:smooth;
+    }
+main{
+    width: 1366px;
+    height: auto;
+    margin: auto;
+    background-color: #e7f1ee;
+    padding: 0px;
+}
+header{
+    width: 1366px;
+    height: 270px;
+    background-color: #DFC7A4;
+    text-align: center;
+
+}
+.titulo{
+    width: 1366px;
+    height: 100px;
+    float: left;
+    background-color: #997C5F;
+    text-align: center;
+    color: white;
+}
+nav{
+    width: 1366px;
+    height: 50px;
+    background-color: #D3aD81;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+nav a{
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 15px;
+    transition: 1s;
+    font-family: "Caveat", cursive;
+}
+nav a:hover{
+    background-color: #997C5F;
+    transform: scale(1.2);
+}
+.inicio-btn{
+    width: 200px;
+    padding: 10px 15px;
+    background-color: #997C5F;
+    font-family: "Caveat", cursive;
+    color: aliceblue;
+    border-radius: 10px;
+    position: fixed;
+    right: -90px;
+    bottom: 50px;
+}
+.inicio-btn a{
+    color: white;
+    text-decoration: none;
+}
+.inicio-btn:hover{
+    right: -10px;
+}
+ 
+.cuadro{
+        width: 100px;
+        height: 100px;
+        background-color: #5b1304;
+        transform: scale(1);
+        border-radius: 50%;
+        overflow: hidden;
+        transition: .7s;
+        text-decoration: none;
+}
+section{
+    width: 1366px;
+    height: 1300px;
+    background-color:  	#ebe4d2;
+    padding: 0;
+}
+ .izquierda{
+    width: 550px;
+    height: 1100px;
+    float: left;
+    background-color: #ebe4d2;
+}
+.textoi{
+    width: 500px;
+    height: auto;
+    float: left;
+    background-color: #DFC7A4;
+}
+ .derecha{
+    width: 700px;
+    height: 1100px;
+    float: right;
+    background-color: #ebe4d2;
+}
+ .textod{
+    width: 600px;
+    height:auto;
+    float: left;
+    background-color: #DFC7A4;
+}
+.imagen{
+    width: 600px;
+    height: auto;
+    float: left;
+    background-color: #cbb087;
+}
+.img{
+    text-align: center;
+}
+footer{
+    width: 1366px;
+    height: 320px;
+    background-color: #ede4d2;
+}
+ .resumen{
+    width: 1250px;
+    height: auto;
+    background-color: #DFC7A4;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    margin: 0;
+}
+p{
+    font-family: "Dosis", sans-serif;
+    font-size: 19px;
+   
+}
+h2{
+font-family: "Roboto", sans-serif;
+    font-size: 35px;
+}
+ol{
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;  
+
+}
